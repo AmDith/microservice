@@ -3,3 +3,12 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+api_clients_post:
+    path: /api/clientspost
+    controller: App\Controller\ClientController::createClient
+    methods: ['POST']
+
+api_articles_post:
+    path: /api/articlespost
+    controller: App\Controller\ArticleController::createArticle
+    methods: ['POST']
